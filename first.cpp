@@ -6,7 +6,7 @@ int main()
 int a,b;
 cin>>a>>b;
 cout<<(a=(a+b));
-  cout<<"multi :"<<a*b;
+  
   
   cout<<"div : "<<a/b;
   cout<<"rem : "<<a%b; //done
