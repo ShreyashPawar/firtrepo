@@ -1,0 +1,58 @@
+
+THIS IS HASHING PASSWORD LINK IN PHP.
+https://stackoverflow.com/questions/30279321/how-to-use-phps-password-hash-to-hash-and-verify-passwords
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+This is solution to the problem that vlc cannnot be run as root
+sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+THis is command to start php server through terminal.
+GO to folder using "cd opt/lampp/"
+sudo ./manager-linux-x64.run
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+THis is command to know current swapiness of the system
+cat /proc/sys/vm/swappiness
+
+Command to change swapiness of the system
+sudo sysctl vm.swappiness=1
+
+After this open a file by this command
+sudo gedit /etc/sysctl.conf
+
+Paste this in this file
+vm.swappiness = 1
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To give access of read and write to a file or folder.
+sudo chmod a+rwx /path/to/file
+if wanna give access to all folder and files of that folder omit x in given command.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+To install lightdm
+sudo apt-get install lightdm
+To reconfigure lightdm
+sudo dpkg-reconfigure lightdm
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TO Configure postfix
+sudo dpkg-reconfigure postfix
+sudo service postfix restart
+
+Then access this file and change parameters
+sudo nano /etc/postfix/main.cf
+
+Use this to test.
+echo "This email confirms that Postfix is working" | mail -s "Testing Posfix" avaneeshdyadav@gmail.com
+_________________________________________________________________________________________________________________________________________________________________
+
+USE THIS TO MANUALLY EDIT WI-FI SETTINGS AND CONNECTIONS TO HOTSPOT THROUGH TERMINAL.
+nmtui   OR   nm-connection-editor
+__________________________________________________________________________________________________________________________________________________________________
