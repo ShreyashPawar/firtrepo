@@ -9,5 +9,5 @@ cout<<(a=(a+b));
   cout<<"multi :"<<a*b;
   
   cout<<"div : "<<a/b;
-  cout<<"rem : "<<a%b;
+  cout<<"rem : "<<a%b; //done
 }
